@@ -12,7 +12,7 @@ train_dir = "data/1-train"
 test_dir = "data/2-test"
 val_dir = "data/3-validate"
 
-IMG_SIZE = (224, 224)
+IMG_SIZE = (160, 160)
 BATCH_SIZE = 32
 
 train_datagen = ImageDataGenerator(
@@ -89,7 +89,7 @@ history_fine = model.fit(
     steps_per_epoch=train_generator.samples // BATCH_SIZE,
     validation_data=val_generator,
     validation_steps=val_generator.samples // BATCH_SIZE,
-    epochs=50,  # Additional epochs
+    epochs=30,  # Additional epochs
 )
 
 ############################  Evaluate  ############################
@@ -102,7 +102,7 @@ print(f"Test accuracy: {test_acc:.2f}")
 
 models_dir = "models"
 current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-model_filename = f"xception_model_{current_time}.h5"
+model_filename = f"model_{current_time}.h5"
 model_save_path = os.path.join(models_dir, model_filename)
 
 # After model training
