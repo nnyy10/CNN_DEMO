@@ -48,5 +48,9 @@ CNN
 1. Place all the original images in the train folder, in their sub categories.
 1. Move 30 images of each category to the folders in test, and then move another 30 images of each category to validate
 1. Install tensorflow with conda if not already installed: https://www.tensorflow.org/install/pip
-1. In the conda terminal, with the tf environment activated, run `python train.py`
+1. In the conda terminal, with the tf environment activated, run
+```bash
+cd /path/to/CNN
+python predict.py
+```
 1. Models will be saved at the end of training
