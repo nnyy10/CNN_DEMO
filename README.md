@@ -3,19 +3,25 @@
 ## Running predict.py
 
 1. Install tensorflow with conda: https://www.tensorflow.org/install/pip
-2. After installing tensorflow and activating the `tf` environment, install
+1. After installing tensorflow and activating the `tf` environment, install
 ```bash
 pip install pillow
 pip install mtcnn
 pip install opencv-python
 pip install numpy==1.26.4
 ```
-3. Download the h5 model and save it in the same directory as the rest of the files in this repo
-4. In the conda terminal, with the tf environment activated, run `python predict.py`
+1. Clone this repo
+1. Download the h5 model and save it in the same directory as the rest of the files in this repo
+1. In the conda terminal, with the tf environment activated, run
+```bash
+cd /path/to/CNN
+python predict.py
+```
 
 ## Running training.py
 
 1. Download the data from https://www.kaggle.com/datasets/sudarshanvaidya/random-images-for-face-emotion-recognition
+1. Clone this repo if not already done so
 1. Make following folder structure
 ```
 CNN
